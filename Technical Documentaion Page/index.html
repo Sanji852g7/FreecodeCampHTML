@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Document</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Documentation</h1>
+      </header>
+      <a class="nav-link" href="#HTML_Introduction">HTML Introduction</a>
+      <a class="nav-link" href="#HTML_Basic">HTML Basic</a>
+      <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+      <a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
+      <a class="nav-link" href="#HTML_Headings">HTML Headings</a>
+      <a class="nav-link" href="#HTML_Paragraphs">HTML Paragraphs</a>
+      <a class="nav-link" href="#HTML_Styles">HTML Styles</a>
+      <a class="nav-link" href="#Reference">Reference</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="HTML_Introduction">
+        <header>
+          <h2>HTML Introduction</h2>
+        </header>
+        <h4>What is HTML?</h4>
+        <ul>
+          <li>HTML stands for <code>Hyper Text Markup Language</code></li>
+          <li>HTML is the standard markup language for creating Web pages.</li>
+          <li>HTML describes the structure of a Web page.</li>
+          <li>HTML consists of a series of <code>elements</code>.</li>
+          <li>HTML elements tell the browser how to display the content.</li>
+          <li>HTML elements label pieces of content such as <code>"this is a heading"</code>, <code>"this is a paragraph"</code>, <code>"this is a link"</code>, etc.</li>
+          <li>HTML provides the basic structure of sites, which is enhanced and modified by other technologies like <code>CSS and JavaScript.</code></li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="HTML_Basic">
+        <header>
+          <h2>HTML Basic</h2>
+        </header>
+          <p>Every HTML document should start with a doctype declaration, such as: <code>&lt;!DOCTYPE html&gt;</code></p>
+          <p>The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>.</p>
+          <p>The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>.</p>
+          <p>To create a paragraph in HTML, you use the <code>&lt;p&gt;</code> tag.</p> 
+      </section>
+
+      <section class="main-section" id="HTML_Elements">
+        <header>
+          <h2>HTML Elements</h2>
+        </header>
+        <p>HTML elements are the <code>building blocks</code> of HTML pages.</p>
+        <p>An element generally consists of an <code>opening tag, content, and a closing tag.</code></p>
+        <p><code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code></p>
+        <ul><strong>For example:</strong><br>
+        <li><code>&lt;div&gt;My First Group Content&lt;div&gt;</code></li>
+        <li><code>&lt;h1&gt;My First Heading&lt;/h1&gt;</code></li>
+        <li><code>&lt;p&gt;My First Paragraph&lt;/p&gt;</code></li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="HTML_Attributes">
+        <header>
+          <h2>HTML Attributes</h2>
+        </header>
+        <p>All HTML elements can have attributes</p>
+        <p>Attributes provide <code>additional information about HTML elements.</code></p>
+        <p>Attributes are always specified in the opening tag of an element.</p>
+        <p>Attributes usually come in name/value pairs like <code>name="value".</code></p>
+        <p><strong>For instance:</strong></p>
+        <code>&lt;img src="image.jpg" alt="Description"&gt;</code>
+        <p><code>&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</code></p>
+        </section>
+
+      <section class="main-section" id="HTML_Headings">
+        <header>
+          <h2>HTML Headings</h2>
+        </header>
+        <p>HTML headings are <code>titles or subtitles that you want to display on a webpage.</code></p>
+        <p>HTML provides <code>six levels</code> of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+        <p><code>&lt;h1&gt;</code>defines the most important heading and <code>&lt;h6&gt;</code> defines the least important heading.</p>
+        <figure>
+        <img id="h-pic" src="https://img.uxcel.com/practices/the-heading-tags-h1-to-h6-1615535492158/a-1702048418566-2x.jpg" alt="html h1 to h6 in visual format">
+        <figcaption>Here is a picture demonstrating for better understanding</figcaption>
+        </figure>
+      </section>
+
+      <section class="main-section" id="HTML_Paragraphs">
+        <header>
+          <h2>HTML Paragraphs</h2>
+        </header>
+        <p>A paragraph <code>always starts on a new line</code>, and is usually a block of text.</p>
+        <p>Paragraphs are defined with the <code>&lt;p&gt;</code> tag.</p>
+        <p>The <code>&lt;p&gt;</code> tag automatically adds space before and after the paragraph.</p>
+      </section>
+      <p><strong>For example:</strong></p>
+      <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code><br>
+<code>&lt;p&gt;This is another paragraph.&lt;/p&gt;</code>
+
+
+      <section class="main-section" id="HTML_Styles">
+        <header>
+          <h2>HTML Styles</h2>
+        </header>
+        <p>Styles are used to enhance the <code>appearance of HTML elements.</code></p>
+        <p><code>CSS (Cascading Style Sheets)</code> is used to apply styles to HTML documents.</p>
+        <p>For example, you can <code>change the color and font size of text.</code></p>
+        <code>p { color: red; font-size: 16px; }</code>
+
+        <section class="main-section" id="Reference">
+        <header>
+          <h2>Reference</h2>
+        </header>
+        <ul>
+        <li>All the documentaion in this page is taken from <a href="https://www.w3schools.com/html/html_intro.asp">w3schools</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Job Survey Form</h1>
+  <p id="description">Please fill out this form</p>
+  <form method="post" action="https://formspree.io/f/xyzgvzjq" id="survey-form">
+
+    <!-- Basic Info -->
+    <fieldset>
+      <div class="form-group">
+        <label for="name" id="name-label">Enter Your First Name: 
+          <input id="name" name="name" type="text" placeholder="Enter your first name here" required>
+        </label>
+        <label for="surname" id="surname-label">Enter Your Last Name: 
+          <input id="surname" name="surname" type="text" placeholder="Enter your last name here" required>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Enter Your Email: 
+          <input id="email" name="email" type="email" placeholder="Enter your email here" required>
+        </label>
+        <label for="number" id="number-label">Enter Your Age: 
+          <input id="number" name="number" type="number" min="16" max="80" placeholder="Enter your age here" required>
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Job Sector/Role -->
+    <fieldset>
+      <label for="dropdown" id="dropdown-label">Please specify your job sector:</label>
+      <select id="dropdown" name="dropdown" required>
+        <option value="" disabled selected>(Select one)</option>
+        <option value="1">IT</option>
+        <option value="2">Education</option>
+        <option value="3">Healthcare</option>
+        <option value="4">Retail</option>
+        <option value="5">Hospitality/Tourism</option>
+        <option value="6">Other</option>
+      </select>
+
+      <label for="other" id="other-label">If Other, please specify:</label>
+      <textarea id="other" name="other" rows="3" cols="30" placeholder="Only enter your job sector if you have selected 'Other' option"></textarea>
+    </fieldset>
+
+    <!-- Job Source -->
+    <fieldset>
+      <legend>How did you find your current job? (Select all that apply)</legend>
+      <label for="job-board"><input id="job-board" name="job-source" type="checkbox" value="job-board"> Job Board</label>
+      <label for="referral"><input id="referral" name="job-source" type="checkbox" value="referral"> Referral</label>
+      <label for="company-website"><input id="company-website" name="job-source" type="checkbox" value="company-website"> Company Website</label>
+      <label for="recruiter"><input id="recruiter" name="job-source" type="checkbox" value="recruiter"> Recruiter</label>
+      <label for="social-media"><input id="social-media" name="job-source" type="checkbox" value="social-media"> Social Media</label>
+      <label for="other-job-source"><input id="other-job-source" name="job-source" type="checkbox" value="other"> Other</label>
+    </fieldset>
+
+    <!-- Job Satisfaction -->
+    <fieldset>
+      <legend>How satisfied are you with your job from scale 1 to 5 (1 being the least and 5 being very satisfied)</legend>
+      <label for="number1" id="number1-label"><input id="number1" name="rating" type="radio" value="1">1</label>
+      <label for="number2" id="number2-label"><input id="number2" name="rating" type="radio" value="2">2</label>
+      <label for="number3" id="number3-label"><input id="number3" name="rating" type="radio" value="3">3</label>
+      <label for="number4" id="number4-label"><input id="number4" name="rating" type="radio" value="4">4</label>
+      <label for="number5" id="number5-label"><input id="number5" name="rating" type="radio" value="5">5</label>
+
+      <label for="reason" id="reason-label"> Provide a reason: 
+        <textarea id="reason" name="reason" rows="3" cols="30" placeholder="I love coding because I love solving problems"></textarea>
+      </label>
+    </fieldset>
+
+    <!-- Submit Button -->
+    <!-- Submit Button -->
+<div class="submit">
+  <button type="submit" id="submit">Submit</button>
+</div>
+
+  </form>
+</body>
+</html>

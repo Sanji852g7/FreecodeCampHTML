@@ -1,0 +1,176 @@
+*{
+  margin:0%;
+  padding:0%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:white;
+  box-shadow: 0 2px 0 green;
+  z-index: 10;
+}
+  
+.nav-lists {
+  background-color:white;
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  color: pink;
+  display: block;
+  font-family: sans-serif,cursive;
+  font-size: 30px;
+  margin:30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-family: 'Ribeye Marrow', cursive;
+  color:green;
+}
+
+/* WELCOME SECTION */
+.welcome-section {
+  background-image: url("https://i.pinimg.com/736x/3c/87/73/3c8773898ef225d034964e2ab7b6d5b9.jpg");
+  background-size: cover;
+  color:pink;
+  display: flex;
+  font-family: 'Ribeye Marrow', cursive;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 100vh;
+  font-size:60px;
+  font-weight:bold;
+}
+
+/*PROJECT SECTION*/
+.projects-section {
+  background:white;
+  padding: 8rem 4rem;
+  text-align: center;
+}
+
+.projects-section-header{
+  color:pink;
+  font-family: 'Ribeye Marrow', cursive;
+  font-size: 60px;
+  padding-bottom: 4rem;
+}
+
+.project-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  background:white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px green;
+  color: pink;
+  font-family: sans-serif, cursive;
+  font-size: 1.7rem;
+  margin: 1.5rem 1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease-out;
+}
+
+.project-tile:hover {
+  font-family: 'Ribeye', cursive;
+  color:green;
+  transform: scale(1.05);
+}
+
+.project-container img {
+  border-radius: 2px;
+  max-width: 225px;
+  width: 100%;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background:green;
+  color:pink;
+}
+
+.contact-header >h1 {
+  font-size: 50px;
+  margin-bottom: 1rem;
+  font-family: 'Ribeye', cursive;
+}
+
+@media (max-width: 28.75em) {
+  .contact-header > h1 {
+    font-size: 4rem;
+  }
+}
+
+.contact-header >p {
+  font-size: 40px;
+  margin-bottom: 2.5rem;
+  font-family: sans-serif, cursive;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  color: pink;
+  font-size: 40px;
+  text-shadow: 2px 2px 1px lightgreen;
+  transition: transform 0.3s ease-out;
+  margin: 0.5rem 3rem;
+  text-decoration: none;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+/* FOOTER */
+footer {
+  background:white;
+  color: pink;
+  font-family: 'Itim', cursive;
+  font-size: 1.2rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+footer a {
+  color: pink;
+}
+
+footer a:hover {
+  color:green;
+}
